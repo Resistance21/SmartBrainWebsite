@@ -27,6 +27,12 @@ class App extends Component {
     }
   }
 
+  // componentDidMount(){
+  //   fetch('http://localhost:3100/')
+  //   .then(res => res.json())
+  //   .then(console.log);
+  // }
+
   imageFaceBox = (data) =>{
     const faceBox = data.outputs[0].data.regions[0].region_info.bounding_box;
     const inputImage = document.getElementById("input-image");
